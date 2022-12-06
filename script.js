@@ -351,6 +351,40 @@ function ai(){
      document.getElementById("box2").style.background ="url(X.png)";
      document.getElementById("box2").style.backgroundSize ="250px 250px";check()
   }
+
+
+  else if(box3act == true && box6act == true && box9act == false){
+    box9oc = 1;
+    document.getElementById("whosemove").innerHTML = "Tic Tac Toe AI (Hard): <b>Your turn</b> ";
+
+     box9act = true;
+     moveent = 0;
+     document.getElementById("box9").style.background ="url(X.png)";
+     document.getElementById("box9").style.backgroundSize ="250px 250px";check()
+  }
+  else if(box3act == true && box6act == false && box9act == true){
+    box6oc = 1;
+    document.getElementById("whosemove").innerHTML = "Tic Tac Toe AI (Hard): <b>Your turn</b> ";
+
+     box6act = true;
+     moveent = 0;
+     document.getElementById("box6").style.background ="url(X.png)";
+     document.getElementById("box6").style.backgroundSize ="250px 250px";check()
+  }
+  else if(box3act == false && box6act == true && box9act == true){
+    box3oc = 1;
+    document.getElementById("whosemove").innerHTML = "Tic Tac Toe AI (Hard): <b>Your turn</b> ";
+
+     box3act = true;
+     moveent = 0;
+     document.getElementById("box3").style.background ="url(X.png)";
+     document.getElementById("box3").style.backgroundSize ="250px 250px";check()
+  }
+
+
+
+
+
   else if(box1oc == 1 && box2oc == 1 && box3oc == 3){
     box3oc = 1;
     document.getElementById("whosemove").innerHTML = "Tic Tac Toe AI (Hard): <b>Your turn</b> ";
@@ -377,16 +411,7 @@ function ai(){
        moveent = 0;
        document.getElementById("box1").style.background ="url(X.png)";
        document.getElementById("box1").style.backgroundSize ="250px 250px";check()}
-       else  if(box3oc == 1 && box5oc == 1 && box7oc == 3){
-        box7oc = 1;
-        document.getElementById("whosemove").innerHTML = "Tic Tac Toe AI (Hard): <b>Your turn</b> ";
-    
-         box7act = true;
-         moveent = 0;
-         document.getElementById("box7").style.background ="url(X.png)";
-         document.getElementById("box7").style.backgroundSize ="250px 250px";check()
-        
-      }
+  
 
        else if(box4oc == 1 && box5oc == 1 && box6oc == 3){
         box6oc = 1;
@@ -469,15 +494,7 @@ function ai(){
                    moveent = 0;
                    document.getElementById("box1").style.background ="url(X.png)";
                    document.getElementById("box1").style.backgroundSize ="250px 250px";check()}
-                   else if(box3act == true && box6act == true && box9act == false){
-                    box9oc = 1;
-                    document.getElementById("whosemove").innerHTML = "Tic Tac Toe AI (Hard): <b>Your turn</b> ";
-                
-                     box9act = true;
-                     moveent = 0;
-                     document.getElementById("box9").style.background ="url(X.png)";
-                     document.getElementById("box9").style.backgroundSize ="250px 250px";check()
-                  }
+
 
 
           else if(box2oc == 1 && box5oc == 1 && box8oc == 3){
@@ -563,7 +580,16 @@ function ai(){
                                document.getElementById("box1").style.background ="url(X.png)";
                                document.getElementById("box1").style.backgroundSize ="250px 250px";check()}
 
-              
+               else  if(box3oc == 1 && box5oc == 1 && box7oc == 3){
+    box7oc = 1;
+    document.getElementById("whosemove").innerHTML = "Tic Tac Toe AI (Hard): <b>Your turn</b> ";
+
+     box7act = true;
+     moveent = 0;
+     document.getElementById("box7").style.background ="url(X.png)";
+     document.getElementById("box7").style.backgroundSize ="250px 250px";check()
+    
+  }
   else if(box3oc == 1 && box5oc == 3 && box7oc == 1){
     box5oc = 1;
     document.getElementById("whosemove").innerHTML = "Tic Tac Toe AI (Hard): <b>Your turn</b> ";
@@ -582,33 +608,6 @@ function ai(){
        document.getElementById("box3").style.backgroundSize ="250px 250px";check()}
     
     
-
-
-
-  
-  else if(box3act == true && box6act == false && box9act == true){
-    box6oc = 1;
-    document.getElementById("whosemove").innerHTML = "Tic Tac Toe AI (Hard): <b>Your turn</b> ";
-
-     box6act = true;
-     moveent = 0;
-     document.getElementById("box6").style.background ="url(X.png)";
-     document.getElementById("box6").style.backgroundSize ="250px 250px";check()
-  }
-  else if(box3act == false && box6act == true && box9act == true){
-    box3oc = 1;
-    document.getElementById("whosemove").innerHTML = "Tic Tac Toe AI (Hard): <b>Your turn</b> ";
-
-     box3act = true;
-     moveent = 0;
-     document.getElementById("box3").style.background ="url(X.png)";
-     document.getElementById("box3").style.backgroundSize ="250px 250px";check()
-  }
-
-
-
-
-
 
 
     
